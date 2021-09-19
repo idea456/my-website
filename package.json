@@ -15,10 +15,17 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
+    "@chakra-ui/react": "^1.6.7",
+    "@contentful/rich-text-react-renderer": "^15.3.3",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "babel-plugin-styled-components": "^1.13.2",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.13.0",
     "gatsby-plugin-gatsby-cloud": "^3.1.0",
     "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-sass": "^4.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-plugin-styled-components": "^4.13.0",
     "gatsby-source-contentful": "^5.13.0",
@@ -26,6 +33,10 @@
     "gatsby-transformer-sharp": "^3.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
+    "react-p5-wrapper": "^2.4.1",
+    "sass": "^1.39.0",
     "styled-components": "^5.3.1"
   }
 }

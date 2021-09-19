@@ -1,0 +1,108 @@
+{
+    "skills": [
+        {
+            "type": "Front End",
+            "list": [
+                {
+                    "name": "React",
+                    "description": "I learned React when I was doing coding bootcamp training at Hacktiv8. Since then, I have used React throughout my projects with other modules such as React Router and Redux to create my personal projects."
+                },
+                {
+                    "name": "Redux",
+                    "description": "When I learned React, I also learned state management with Redux. My experience with it is that I have understood how state management flows throughout different components from the store, to calling dispatches."
+                },
+                {
+                    "name": "Vue",
+                    "description": "Vue was another front-end framework I picked up really fast after React to help one my local church (Acts Church) to create a database interface for their newcomers into the church. I love developing applications with it, since it is simpler to understand."
+                },
+                {
+                    "name": "CSS",
+                    "description": "CSS has always been like my go-to personal customization language whenever I don't prefer a style on a UI library like Material UI. I am comfortable with it since I am very used to concepts such as flexbox. I also used it to create simple animations such as transitions."
+                },
+                {
+                    "name": "HTML",
+                    "description": "I learned HTML from an online course at Coursera teaching Bootstrap. I am confident with my HTML knowledge and used it almost every time I develop a new project."
+                },
+                {
+                    "name": "Bootstrap",
+                    "description": "I learned Boostrap from Coursera, and it was my introduction to the world of front-end web development. With Bootstrap knowledge I was able to also migrate to other UI libraries such as Material UI easily with its similar concepts. Now I mostly use Material UI."
+                },
+                {
+                    "name": "React Native",
+                    "description": "I have experienced in developing Android apps with React Native, and it was a really easy experience instead of using Android Studio. I am still at an introductory level at best, but I am able to piece together front-end components and understand its layout."
+                }
+            ]
+        },
+        {
+            "type": "Back End",
+            "list": [
+                {
+                    "name": "MySQL",
+                    "description": "I learned and practiced a lot of SQL when I was doing Databases unit at my university, using Oracle SQL. I went from using Oracle SQL to MySQL, and I was able to catch up really quickly with the basic concepts since they were really similar to each other."
+                },
+                {
+                    "name": "NodeJS",
+                    "description": "I was introduced to the back-end world through NodeJS, since it was the first thing I learned. Currently I have a basic understanding of NodeJS with concepts such as asynchronous calls to making APIs with Express."
+                },
+                {
+                    "name": "Git",
+                    "description": "I use Git almost every time when I'm developing a project, and I have used it with teams to manage different versions of my project."
+                }
+            ]
+        },
+        {
+            "type": "Languages",
+            "list": [
+                {
+                    "name": "Python",
+                    "description": "I learned and practiced a lot of SQL when I was doing Databases unit at my university, using Oracle SQL. I went from using Oracle SQL to MySQL, and I was able to catch up really quickly with the basic concepts since they were really similar to each other."
+                },
+                {
+                    "name": "Javascript",
+                    "description": "I was introduced to the back-end world through NodeJS, since it was the first thing I learned. Currently I have a basic understanding of NodeJS with concepts such as asynchronous calls to making APIs with Express."
+                },
+                {
+                    "name": "Golang",
+                    "description": "I started learning Golang after developing an interest"
+                },
+                {
+                    "name": "Java",
+                    "description": "I use Git almost every time when I'm developing a project, and I have used it with teams to manage different versions of my project."
+                },
+                {
+                    "name": "C",
+                    "description": "Most of my skills I developed with using C were around maintaining and developing HPC applications such as OpenMPI and simulating scheduling algorithms for various processes."
+                },
+                {
+                    "name": "Typescript",
+                    "description": "I learned Typescript during my Programming Paradigms unit in my university as part of the functional programming course. I was able to pick up the language relatively fast and create applications with it using Observables such as the Asteroids game I made."
+                }
+            ]
+        },
+        {
+            "type": "Concepts",
+            "list": [
+                {
+                    "name": "Algorithms/Data Structures",
+                    "description": "My understanding of algorithms and data structures is relatively strong, since my units has enforced this knowledge, I have learned to develop an algorithmic thinking and approach when facing a problem, especially after many practices and training solving algorithmic-related problems in university and spare time."
+                },
+                {
+                    "name": "Object Oriented Programming",
+                    "description": "I learned OOP at my university unit, and have understood the concepts of SOLID and DRY principles, the benefits of encapsulation and polymorphism, and many other coding practices that I learned and lived by."
+                },
+                {
+                    "name": "UX Design",
+                    "description": "UX design was one of the most appreciated topics that I have recently learned and undertaken in my university, and it had brought me a different perspective on how I view the front-end system and how it should be organized and practiced to provide the best user experience for the users."
+                },
+                {
+                    "name": "Black and white box testing",
+                    "description": "My Software Quality and Testing unit has taught me the theories of black/white box testing such as branch coverage, MC/DC, data flow testing, and many more methods, and also ways to design test cases that have a high coverage. I learned concepts such as mocking using Python to test various test cases that calls a mock API."
+                },
+                {
+                    "name": "Functional Programming",
+                    "description": "I have a general understanding of functional programming from theory to implementation with Typescript and Haskell."
+                }
+            ]
+        }
+    ]
+}
