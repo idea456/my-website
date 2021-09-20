@@ -1,8 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import PostItem from "../../components/Post/PostItem"
-import { Grid, GridItem, Heading, Box } from "@chakra-ui/react"
+import { SimpleGrid,  Heading, Box } from "@chakra-ui/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Transition from "../../components/Layout/Transition";
 
 
 export default function Experience() {
@@ -34,25 +35,26 @@ export default function Experience() {
     return (
         <Box pt="12vh" alignItems="stretch">
             <Heading as="h1" size="2xl" mb={12}>📝 Activities</Heading>
-            <Grid
-                templateRows={`repeat(${Math.ceil(data.allContentfulActivities.totalCount / 2)}, 1fr)`}
-                templateColumns="repeat(2, 1fr)"
+            <SimpleGrid
+                rows={[1, 1, Math.ceil(data.allContentfulActivities.totalCount / 2)]}
+                columns={[1, 1, 2]}
                 gap={12}
             >
-            {data.allContentfulActivities.edges.map(edge => {
+            {data.allContentfulActivities.edges.map((edge, i) => {
                 return (
-                    <GridItem rowSpan={1} colSpan={1}>
-                        <PostItem 
-                            title={edge.node.title} 
-                            description={documentToReactComponents(JSON.parse(edge.node.activityDescription.raw))} 
-                            image={edge.node.featuredImage.fluid.src} 
-                            company={edge.node.company}
-                            date={edge.node.date}
-                        />
-                    </GridItem>
+                    <Transition>
+                            <PostItem 
+                                key={i}
+                                title={edge.node.title} 
+                                description={documentToReactComponents(JSON.parse(edge.node.activityDescription.raw))} 
+                                image={edge.node.featuredImage.fluid.src} 
+                                company={edge.node.company}
+                                date={edge.node.date}
+                            />
+                    </Transition>
                 )
             })}
-        </Grid>
+        </SimpleGrid>
         </Box>
     )
 }

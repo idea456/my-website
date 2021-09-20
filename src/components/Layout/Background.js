@@ -111,7 +111,7 @@ function sketch(p) {
   }
 
   p.setup = function () {
-    p.createCanvas(window.innerWidth, document.body.scrollHeight);
+    p.createCanvas(window.innerWidth, document.body.scrollHeight * 1.2);
     // limit the amount of balls based on the screen width
     let ballCount = 0.03 * window.innerWidth;
     // let ballCount = 10;

@@ -20,9 +20,9 @@ const MainPage = () => {
   return (
     <div style={{position: 'relative', overflow: 'hidden'}}>
       <ChakraProvider theme={theme}>
-        <Fonts />
         <Background />
-        <Container maxW="container.xl" minH="100vh">
+        <Fonts />
+        <Container maxW={["container.md", "container.xl"]} minH="100vh">
           <NavBar />
           <Helmet>
             <style>{`body { background-color: ${primary}; }`}</style>

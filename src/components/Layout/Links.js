@@ -14,7 +14,6 @@ export default function Links(props) {
     <MenuItem to="/">Home</MenuItem>
     <MenuItem to="/about">About</MenuItem>
     <MenuItem to="/projects">Projects</MenuItem>
-    <MenuItem to="/contact">Contact</MenuItem>
     </Stack>
   )
 }

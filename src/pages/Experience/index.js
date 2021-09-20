@@ -1,8 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import PostItem from "../../components/Post/PostItem"
-import { Grid, GridItem, Heading, Box } from "@chakra-ui/react"
+import { SimpleGrid, Heading, Box } from "@chakra-ui/react"
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import Transition from "../../components/Layout/Transition";
 
 
 export default function Experience() {
@@ -34,26 +35,27 @@ export default function Experience() {
     return (
         <Box alignItems="stretch">
             <Heading as="h1" size="2xl" mb={12}>💻 Experience</Heading>
-            <Grid
-                templateRows={`repeat(${Math.ceil(data.allContentfulExperience.totalCount / 2)}, 1fr)`}
-                templateColumns="repeat(2, 1fr)"
+            <SimpleGrid
+                rows={[1, 1, Math.ceil(data.allContentfulExperience.totalCount / 2)]}
+                columns={[1, 1, 2]}
                 gap={12}
             >
             {data.allContentfulExperience.edges.map((edge, i) => {
                 return (
-                    <GridItem key={i} rowSpan={1} colSpan={1}>
-                        <PostItem
-                            title={edge.node.title} 
-                            description={documentToReactComponents(JSON.parse(edge.node.workDescription.raw))} 
-                            image={edge.node.featuredImage.fluid.src} 
-                            company={edge.node.company}
-                            date={edge.node.date}
-                            isExperience
-                        />
-                    </GridItem>
+                    <Transition>
+                            <PostItem
+                                key={i}
+                                title={edge.node.title} 
+                                description={documentToReactComponents(JSON.parse(edge.node.workDescription.raw))} 
+                                image={edge.node.featuredImage.fluid.src} 
+                                company={edge.node.company}
+                                date={edge.node.date}
+                                isExperience
+                            />
+                    </Transition>
                 )
             })}
-        </Grid>
+        </SimpleGrid>
         </Box>
     )
 }
